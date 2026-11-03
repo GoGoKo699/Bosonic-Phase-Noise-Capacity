@@ -1,0 +1,26 @@
+# Bosonic Phase-Noise Capacity
+
+This repository studies ordinary quantum communication through independent uses of an oscillator phase channel under an unconditional mean photon-number constraint. Its central result evaluates the optimized capacity by the entropy of a finite angular histogram, with a universal additive error.
+
+## Reader routes
+
+- Start: README.md gives the question, main bound, consequences and reproduction route.
+- Complete scientific narrative: science/README.md, followed by science/01-model.md through science/05-interpretation.md.
+- Exact coding model and arbitrary-measure dilation: science/01-model.md.
+- Product-Hamiltonian entropy-rate inequality and uniform phase rounding: science/02-phase-quantization.md.
+- Main theorem, photon-number tails and information dimension: science/03-capacity.md.
+- Gaussian broadening, finite geometric spin baths and order of limits: science/04-bath-and-smoothing.md.
+- Operational interpretation and limits: science/05-interpretation.md.
+- Attribution and closest theorem comparisons: references/related-work.md and references/sources.bib.
+- Reproducible numerical evidence and its limits: verification/README.md.
+
+## Distinctions to preserve
+
+- The main capacity result is unassisted and assumes independent channel uses.
+- A mean photon constraint permits unbounded tails; the dyadic-shell proof controls them explicitly.
+- The rounded-channel entropy comparison is uniform over input distributions and arbitrary Borel phase laws.
+- The common purification's auxiliary marginal is isospectral to the complementary output; it is not the physical receiver output for a diagonal input.
+- The coding theorem, cyclic channel optimum, product-Hamiltonian rate, information dimension and prior spectral-entropy mechanism are established ingredients.
+- Flat-input numerical coherent information is an achievable rate, not a numerical capacity optimization or proof.
+- A fixed finite bath eventually becomes resolved; fixed smooth phase noise ultimately saturates. Neither statement is an asymptotic robustness claim for an ideal fractal law.
+- No strong converse, efficient code construction, loss tolerance, or singular-measure assistance equality is claimed.
