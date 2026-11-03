@@ -6,6 +6,10 @@ This repository studies ordinary quantum communication through independent uses 
 
 - Start: README.md gives the question, main bound, consequences and reproduction route.
 - Complete scientific narrative: science/README.md, followed by science/01-model.md through science/05-interpretation.md.
+- Learning entry: learning/README.md connects the worked example, selected source and milestone map.
+- Concrete physical and entropy example: learning/two-phase-example.md.
+- One educational anchor and its exact bridge: learning/anchor.md, using Wilde, Quantum Information Theory, 2nd edition (2017).
+- Project understanding map: learning/milestones.md contains exactly M01–M30, with 14 background/preliminaries and 16 narrative/innovation milestones.
 - Exact coding model and arbitrary-measure dilation: science/01-model.md.
 - Product-Hamiltonian entropy-rate inequality and uniform phase rounding: science/02-phase-quantization.md.
 - Main theorem, photon-number tails and information dimension: science/03-capacity.md.
