@@ -30,14 +30,14 @@ The entropy of the phase noise at resolution $`1/E`$ determines how much of the 
 \lim_{E\to\infty}\frac{Q_\mu(E)}{\log_2 E}=1-d_I.
 ```
 
-The finite-resolution theorem also applies when this dimension does not exist. A geometric spin bath illustrates why the distinction between finite and infinite noise models matters. For $`K`$ fair spins with geometric coupling ratio $`r\gt2`$, set $`\delta=1/\log_2r`$. With independent Gaussian phase broadening of width $`s`$ in cycles, write $`F=\min\{E,1/s\}`$. Then
+The finite-resolution theorem also applies when this dimension does not exist. A geometric spin bath illustrates why the distinction between finite and infinite noise models matters. For $`K`$ fair spins with couplings proportional to $`r^{-k}`$, where $`r\gt2`$, set $`\delta=1/\log_2r`$. With independent Gaussian phase broadening of width $`0<s\le1/10`$ in cycles, write $`F=\min\{E,1/s\}`$. Then
 
 ```math
 Q_{\mu_K*G_s}(E)
 =\log_2 F-\min\{K,\delta\log_2 F\}+O_r(1).
 ```
 
-The error is uniform in energy, bath size and broadening width in the stated small-width range. A finite bath eventually becomes fully resolved; continuous background broadening eventually sets a capacity ceiling. The [physical analysis](science/04-bath-and-smoothing.md) gives the precise ranges, proof and interpretation.
+The error is uniform in energy, bath size and broadening width over that range. A finite bath eventually becomes fully resolved; continuous background broadening eventually sets a capacity ceiling. The [physical analysis](science/04-bath-and-smoothing.md) gives the precise ranges, proof and interpretation.
 
 ## Read the science
 
@@ -53,6 +53,10 @@ Start with the [scientific route](science/README.md), or go directly to the rele
 | Which ingredients and nearby conclusions were already known? | [Related work](references/related-work.md) and [bibliography](references/sources.bib) |
 
 The two decisive steps are an input-uniform entropy comparison with a finite cyclic phase channel and a decomposition into photon-number shells that controls all mean-energy tails. The proof does not impose a hard cutoff on the allowed code.
+
+## Learn the argument
+
+The [learning route](learning/README.md) uses **Mark M. Wilde, *Quantum Information Theory*, second edition (2017)** as its single educational anchor. Start with [two phases and two encodings](learning/two-phase-example.md), then use the [source bridge](learning/anchor.md) and [30-milestone map](learning/milestones.md) to connect quantum Shannon theory to the capacity proof and its physical consequences. The map has 14 background milestones and 16 narrative milestones, each with a conceptual target, dependencies and source pointers.
 
 ## Reproduce the finite checks
 

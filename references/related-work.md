@@ -82,7 +82,7 @@ The application here rounds each phase to its bin midpoint. On the first $`d`$ F
 
 The relevant Szegő and Avram--Parter results concern limits of normalized traces of test functions of Toeplitz matrices. Lami--Wilde's Lemma S6 uses Serra-Capizzano's growth-condition theorem (`SerraCapizzano2002`). A broader directly inspected primary formulation is [Böttcher, Grudsky and Maksimenko](https://www.numdam.org/item/10.1016/j.crma.2008.06.002.pdf), Theorems 2 and 5 (`BottcherGrudskyMaksimenko2008`). Its symbol is an $`L^1`$ function; convex domination controls admissible unbounded test functions. The associated [longer primary preprint](https://www.tu-chemnitz.de/mathematik/preprint/2007/PREPRINT_24.pdf), especially Theorem 8.2, makes these hypotheses explicit.
 
-These are powerful density-symbol asymptotics. Their stated conclusions do not provide a noise-uniform finite-size comparison with the entropy of a phase histogram, and they do not optimize nonuniform photon distributions. A generic weak spectral-distribution limit is insufficient: for a point phase law, the Toeplitz matrix has eigenvalues $`d,0,\ldots,0`$. Its empirical eigenvalue distribution tends to a point mass at zero, while $`d^{-1}\operatorname{Tr}(T_d\log T_d)=\log d`$. The entropy contribution from the large eigenvalue must be retained.
+These are powerful density-symbol asymptotics. Their stated conclusions do not provide a noise-uniform finite-size comparison with the entropy of a phase histogram, and they do not optimize nonuniform photon distributions. A generic weak spectral-distribution limit is insufficient: for a point phase law, the Toeplitz matrix has eigenvalues $`d,0,\ldots,0`$. Its empirical eigenvalue distribution tends to a point mass at zero, while $`d^{-1}\mathrm{Tr}(T_d\log T_d)=\log d`$. The entropy contribution from the large eigenvalue must be retained.
 
 For the flat input, the present estimate reads
 
@@ -92,7 +92,7 @@ For the flat input, the present estimate reads
 
 Even this fixed-input statement is not by itself the whole capacity result. The proof uses the stronger input-uniform rounded-channel comparison and then removes the hard cutoff. A dyadic shell label $`K=\lfloor\log_2(1+n/m)\rfloor`$ has $`H(K)\le2`$ and $`\mathbb EK\le1`$ under the mean-energy budget. Exact refinement of the phase partitions then bounds the entire tail contribution by three additional bits.
 
-The bounded comparison above did not identify a cited theorem that already implies the complete uniform optimized law. An existing input-uniform entropy comparison or an equivalent mean-energy capacity theorem would be a material antecedent. The contribution should therefore be described by the proved statement and its assumptions, without a claim that all possible mathematical formulations have been excluded.
+None of the primary results reviewed above supplies the complete uniform optimized law. An existing input-uniform entropy comparison or an equivalent mean-energy capacity theorem would be a material antecedent. The contribution should therefore be described by the proved statement and its assumptions, without a claim that all possible mathematical formulations have been excluded.
 
 ## Information dimension and physical phase laws
 
