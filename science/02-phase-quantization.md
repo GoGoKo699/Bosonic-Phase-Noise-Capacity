@@ -25,7 +25,7 @@ All logarithms are base two. For a probability vector $`p=(p_0,\ldots,p_{d-1})`$
 
 ```math
 I_\mu(p)
-=H(p)-S\!\left(\sum_{n<d}p_n|e_n\rangle\langle e_n|\right),
+=H(p)-S\!\left(\sum_{n\lt d}p_n|e_n\rangle\langle e_n|\right),
 \qquad e_n(\theta)=e^{-in\theta}\in L^2(\mu).
 \qquad\text{(P2)}
 ```
@@ -56,7 +56,7 @@ Define the numerical constants
 ```math
 \begin{aligned}
 \alpha
-&=2\max_{0<x<1}\sqrt{x(1-x)}
+&=2\max_{0\lt x\lt 1}\sqrt{x(1-x)}
  \left|\log\frac{x}{1-x}\right|
 =1.91227328893\ldots,\\
 C_d&=\frac{\pi\alpha}{2}\left(1-\frac1d\right),
@@ -182,10 +182,10 @@ Introduce an auxiliary label system $`C\simeq\mathcal H_d`$ and an environment $
 ```math
 \begin{aligned}
 |\Psi_0\rangle_{CF}
-&=\sum_{n<d}\sqrt{p_n}|n\rangle_C\otimes|f_n\rangle_F,
+&=\sum_{n\lt d}\sqrt{p_n}|n\rangle_C\otimes|f_n\rangle_F,
 & f_n(\theta)&=e^{-in\phi_{J(\theta)}},\\
 |\Psi_1\rangle_{CF}
-&=\sum_{n<d}\sqrt{p_n}|n\rangle_C\otimes|e_n\rangle_F,
+&=\sum_{n\lt d}\sqrt{p_n}|n\rangle_C\otimes|e_n\rangle_F,
 & e_n(\theta)&=e^{-in\theta}.
 \end{aligned}
 \qquad\text{(P15)}
@@ -270,7 +270,7 @@ For the flat input, define the normalized Toeplitz matrix
 \qquad
 (T_d(\mu))_{nm}
 =\int e^{-i(n-m)\theta}\,\mu(d\theta),
-\quad 0\le n,m<d.
+\quad 0\le n,m\lt d.
 \qquad\text{(P20)}
 ```
 

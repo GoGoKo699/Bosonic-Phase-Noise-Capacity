@@ -29,8 +29,8 @@ D_m(\mu)-C\le I_c(u_m,\mathcal N_\mu)
 where $`u_m`$ is uniform on the first $`m`$ Fock levels and
 
 ```math
-C=\frac\pi2\alpha<3.004,\qquad
-\alpha=2\max_{0<x<1}\sqrt{x(1-x)}
+C=\frac\pi2\alpha\lt 3.004,\qquad
+\alpha=2\max_{0\lt x\lt 1}\sqrt{x(1-x)}
 \left|\log_2\frac{x}{1-x}\right|.
 ```
 

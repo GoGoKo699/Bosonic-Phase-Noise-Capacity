@@ -27,13 +27,13 @@ D_m(\mu)-C
 
 The constant is independent of the phase law and energy. The lower bound is achieved as a coherent-information rate by a flat distribution on the first $`m`$ number states, followed by ordinary quantum coding across independent channel uses.
 
-Let $`Z`$ be a standard real Gaussian, independent of $`X`$, and add the phase $`sZ\bmod1`$. Denote its circle law by $`G_s`$, so the total phase law is $`\mu*G_s`$. The width $`s`$ is in cycles; a Gaussian width $`\sigma`$ in radians corresponds to $`s=\sigma/(2\pi)`$. We use $`0<s\le1/10`$. Widths outside this small-noise range are not needed for the crossover statement.
+Let $`Z`$ be a standard real Gaussian, independent of $`X`$, and add the phase $`sZ\bmod1`$. Denote its circle law by $`G_s`$, so the total phase law is $`\mu*G_s`$. The width $`s`$ is in cycles; a Gaussian width $`\sigma`$ in radians corresponds to $`s=\sigma/(2\pi)`$. We use $`0\lt s\le1/10`$. Widths outside this small-noise range are not needed for the crossover statement.
 
 ## 2. Gaussian smoothing and finite-resolution entropy
 
 ### Theorem B1: quantized smoothing
 
-For every Borel law of $`X\in[0,1)`$, every integer $`m\ge1`$, and $`0<s\le1/10`$,
+For every Borel law of $`X\in[0,1)`$, every integer $`m\ge1`$, and $`0\lt s\le1/10`$,
 
 ```math
 \boxed{
@@ -123,7 +123,7 @@ H(Y\mid A=a)\ge\log t+h(Z).
 \qquad\text{(B8)}
 ```
 
-For the upper bound, use $`|Y-ta|\le t|R+Z|+1`$. Since $`0\le R<1`$, independence of $`Z`$ gives $`\mathbb E[(R+Z)^2\mid A=a]\le2`$. Thus
+For the upper bound, use $`|Y-ta|\le t|R+Z|+1`$. Since $`0\le R\lt 1`$, independence of $`Z`$ gives $`\mathbb E[(R+Z)^2\mid A=a]\le2`$. Thus
 
 ```math
 \mathbb E[(Y-ta)^2\mid A=a]\le4t^2+2.
@@ -195,7 +195,7 @@ L=\lfloor X+sZ\rfloor,\qquad
 J=\lfloor m((X+sZ)\bmod1)\rfloor.
 ```
 
-Then $`Y=mL+J`$, with $`0\le J<m`$. This is a bijection between $`Y`$ and $`(L,J)`$. Also $`|L|\le s|Z|+1\le|Z|+1`$, so $`H(L)\le a(4)`$. Hence
+Then $`Y=mL+J`$, with $`0\le J\lt m`$. This is a bijection between $`Y`$ and $`(L,J)`$. Also $`|L|\le s|Z|+1\le|Z|+1`$, so $`H(L)\le a(4)`$. Hence
 
 ```math
 H(Y)-a(4)\le H(J)\le H(Y).
@@ -226,7 +226,7 @@ where $`h(Z)=\tfrac12\log(2\pi e)`$. No optimization of this constant is needed.
 
 ### Corollary B2: arbitrary phase law with Gaussian broadening
 
-Let $`F=\min\{E,1/s\}`$. Uniformly in every Borel phase law, every $`E\ge1`$, and $`0<s\le1/10`$,
+Let $`F=\min\{E,1/s\}`$. Uniformly in every Borel phase law, every $`E\ge1`$, and $`0\lt s\le1/10`$,
 
 ```math
 \boxed{
@@ -311,7 +311,7 @@ j=\min\{K,\lfloor\log_r m\rfloor\},
 
 For $`j=0`$, take $`A_j`$ to be a deterministic label. The entropy of this prefix is $`H(A_j)=j`$.
 
-If $`j<K`$, a fixed prefix confines $`X_K`$ to an interval of length at most $`r^{-j}`$. Since $`mr^{-j}<r`$, this interval meets at most $`\lceil r\rceil+2`$ of the $`m`$ phase bins. Thus
+If $`j\lt K`$, a fixed prefix confines $`X_K`$ to an interval of length at most $`r^{-j}`$. Since $`mr^{-j}\lt r`$, this interval meets at most $`\lceil r\rceil+2`$ of the $`m`$ phase bins. Thus
 
 ```math
 H(J_m(X_K)\mid A_j)\le\log(\lceil r\rceil+2).
@@ -326,7 +326,7 @@ H(A_j\mid J_m(X_K))
 \qquad\text{(B21)}
 ```
 
-If $`j=K<\infty`$, each prefix already determines a single atom. Distinct atoms are separated on the real interval by at least $`(r-1)r^{-K}`$, while $`m\ge r^K`$. Thus they lie in distinct phase bins, and $`H_m(\mu_K)=K`$ exactly in this range. The bounds above remain valid.
+If $`j=K\lt \infty`$, each prefix already determines a single atom. Distinct atoms are separated on the real interval by at least $`(r-1)r^{-K}`$, while $`m\ge r^K`$. Thus they lie in distinct phase bins, and $`H_m(\mu_K)=K`$ exactly in this range. The bounds above remain valid.
 
 The identity
 
@@ -349,7 +349,7 @@ No constant depends on $`K`$ or $`m`$. $`\square`$
 
 ## 5. Capacity crossover with finite bath size and broadening
 
-For $`s=0`$, set $`F=E`$. For $`0<s\le1/10`$, set $`F=\min\{E,1/s\}`$. Equations (B2), (B15), and (B19) give
+For $`s=0`$, set $`F=E`$. For $`0\lt s\le1/10`$, set $`F=\min\{E,1/s\}`$. Equations (B2), (B15), and (B19) give
 
 ```math
 \boxed{

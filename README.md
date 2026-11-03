@@ -30,7 +30,7 @@ The entropy of the phase noise at resolution $`1/E`$ determines how much of the 
 \lim_{E\to\infty}\frac{Q_\mu(E)}{\log_2 E}=1-d_I.
 ```
 
-The finite-resolution theorem also applies when this dimension does not exist. A geometric spin bath illustrates why the distinction between finite and infinite noise models matters. For $`K`$ fair spins with couplings proportional to $`r^{-k}`$, where $`r\gt2`$, set $`\delta=1/\log_2r`$. With independent Gaussian phase broadening of width $`0<s\le1/10`$ in cycles, write $`F=\min\{E,1/s\}`$. Then
+The finite-resolution theorem also applies when this dimension does not exist. A geometric spin bath illustrates why the distinction between finite and infinite noise models matters. For $`K`$ fair spins with couplings proportional to $`r^{-k}`$, where $`r\gt2`$, set $`\delta=1/\log_2r`$. With independent Gaussian phase broadening of width $`0\lt s\le1/10`$ in cycles, write $`F=\min\{E,1/s\}`$. Then
 
 ```math
 Q_{\mu_K*G_s}(E)
